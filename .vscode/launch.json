@@ -1,0 +1,25 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Launch vibe-gen-grid (Chrome)",
+      "type": "chrome",
+      "request": "launch",
+      "url": "http://localhost:5173",
+      "webRoot": "${workspaceFolder}/vibe-gen-grid",
+      "sourceMapPathOverrides": {
+        "webpack:///./src/*": "${webRoot}/src/*"
+      },
+      "preLaunchTask": "npm: dev - vibe-gen-grid"
+    },
+    {
+      "name": "Attach to Chrome (vibe-gen-grid)",
+      "type": "chrome",
+      "request": "attach",
+      "port": 9222,
+      "url": "http://localhost:5173",
+      "webRoot": "${workspaceFolder}/vibe-gen-grid"
+    }
+  ]
+}
+
